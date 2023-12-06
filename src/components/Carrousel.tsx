@@ -30,8 +30,12 @@ export const Carrousel = () => {
 
   return (
     <Swiper
-      slidesPerView={6}
-      spaceBetween={20}
+      slidesPerView={
+        window.innerWidth <= 768 ? 1.5 : 6
+      }
+      spaceBetween={
+        window.innerWidth <= 768 ? 10 : 20
+      }
       loop={true}
       className="w-full continuous-swipe"
     >
