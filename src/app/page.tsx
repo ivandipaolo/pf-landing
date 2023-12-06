@@ -1,24 +1,32 @@
 import { Header, HeroSection } from "@/components"
+import { Perks } from "@/components/Perks"
 import Image from "next/image"
 
 export default function Home() {
   return (
     <>
-      <div className="flex flex-row justify-between min-h-screen">
-        <header className="basis-1/2 flex flex-col">
+      <div className="justify-between lg:min-h-screen">
+        <div className="lg:basis-1/2 flex flex-col items-center lg:items-stretch z-20 lg:w-2/3">
           <Header />
           <HeroSection />
-        </header>
+        </div>
         <Image
-          className="basis-1/2 object-cover absolute top-0 right-0 max-h-screen min-h-screen w-1/2"
+          className="lg:basis-1/2 left-0 min-h-max lg:object-cover absolute lg:left-auto top-0 lg:right-0 lg:max-h-screen lg:min-h-screen lg:w-1/2 z-0"
           src="/images/img-1.svg"
           alt="Lamps"
-          width={200}
-          height={200}
+          width={1920}
+          height={1080}
+        />
+        <Image
+          src="/icons/contact.svg"
+          alt="contact"
+          width={50}
+          height={50}
+          className="lg:inline-block hidden max-h-12 border rounded-full text-white max-w-fit z-10 absolute top-10 right-10"
         />
       </div>
       <div>
-        <h1>hola</h1>
+        <Perks />
       </div>
     </>
   )

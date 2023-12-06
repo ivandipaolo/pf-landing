@@ -12,6 +12,7 @@ const config: Config = {
         varta: ["Varta", "sans-serif"],
         merriweather: ["Merriweather", "serif"],
         karla: ["Karla", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
       },
       colors: {
         primary: '#A06056',
