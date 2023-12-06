@@ -5,8 +5,9 @@ import {
   Perks,
   Trends,
   Carrousel,
-  Footer,
+  Inspirations,
 } from "@/components"
+import Footer from "@/components/Footer"
 import Image from "next/image"
 
 export default function Home() {
@@ -37,9 +38,12 @@ export default function Home() {
       <MaxWidthWrapper className="bg-white pt-10">
         <Trends />
       </MaxWidthWrapper>
-      <div className="bg-white pb-10">
+      <div className="bg-white">
         <Carrousel />
       </div>
+      <MaxWidthWrapper className="bg-white">
+        <Inspirations />
+      </MaxWidthWrapper>
       <MaxWidthWrapper>
         <Footer />
       </MaxWidthWrapper>

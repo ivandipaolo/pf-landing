@@ -5,10 +5,15 @@ import "swiper/css"
 import "swiper/css/pagination"
 
 import Image from "next/image"
-
-import { Autoplay, Pagination } from "swiper/modules"
+import { useEffect, useState } from "react"
 
 export const Carrousel = () => {
+  const [windowWidth, setWindowWidth] = useState(0)
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth)
+  }, [])
+
   const imagesPaths = [
     "/images/carrousel/carr2.png",
     "/images/carrousel/carr3.png",
@@ -30,12 +35,8 @@ export const Carrousel = () => {
 
   return (
     <Swiper
-      slidesPerView={
-        window.innerWidth <= 768 ? 1.5 : 6
-      }
-      spaceBetween={
-        window.innerWidth <= 768 ? 10 : 20
-      }
+      slidesPerView={windowWidth <= 768 ? 1.5 : 6}
+      spaceBetween={windowWidth <= 768 ? 10 : 20}
       loop={true}
       className="w-full continuous-swipe"
     >
