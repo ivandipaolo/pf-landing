@@ -12,10 +12,9 @@ export const Header = () => {
         </Link>
         <Image
           src="/icons/burgermenu.svg"
-          alt="scrolldown"
+          alt="bugermenu"
           width={50}
           height={50}
-          layout="responsive"
           className="max-h-12 max-w-fit lg:hidden"
         />
         <nav className="lg:flex flex-row font-varta text-secondary lg:gap-2 lg:flex-wrap xl:gap-5 mt-3.5 text-lg font-normal hidden">

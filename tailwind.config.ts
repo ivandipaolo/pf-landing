@@ -21,6 +21,7 @@ const config: Config = {
         background: '#F3EEE8',
         input_background: '#fdfbf9',
         extra: '#121212',
+        subscribed: '#191919',
       },
       fontSize: {
         '6xl': '3.25rem',

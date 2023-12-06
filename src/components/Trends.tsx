@@ -1,4 +1,20 @@
+"use client"
+
+import { cn } from "@/lib"
+import { useState, useEffect } from "react"
+
 export const Trends = () => {
+  const [email, setEmail] = useState<string>("")
+  const [isSubscribed, setIsSubscribed] = useState<boolean>(false)
+
+  useEffect(() => {
+    if (isSubscribed) {
+      setTimeout(() => {
+        setIsSubscribed(false)
+      }, 3000)
+    }
+  }, [isSubscribed])
+
   return (
     <div className="flex flex-col gap-7 lg:flex-row">
       <div className="flex flex-col gap-4 lg:basis-1/2">
@@ -15,11 +31,23 @@ export const Trends = () => {
       <div className="flex flex-col gap-5 lg:basis-1/2 lg:flex-row items-center justify-center">
         <input
           className="p-2 h-10 text-base bg-input_background font-varta font-normal"
+          onChange={(e) => setEmail(e.target.value)}
           type="text"
+          name="email"
+          value={email}
           placeholder="email@address.com"
         />
-        <button className="font-karla font-bold text-base lg:text-lg text-white bg-tertiary h-12 lg:w-fit lg:px-6 lg:py-2">
-          Subscribe
+        <button
+          onClick={() => {
+            setIsSubscribed(true)
+            setEmail("")
+          }}
+          className={cn(
+            "font-karla font-bold text-base lg:text-lg text-white bg-tertiary h-12 lg:w-fit lg:px-7 lg:py-3)",
+            isSubscribed && "bg-subscribed"
+          )}
+        >
+          {isSubscribed ? "Subscribed!" : "Subscribe"}
         </button>
       </div>
       <div className="flex flex-col gap-5 lg:hidden">

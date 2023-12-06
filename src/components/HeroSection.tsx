@@ -19,17 +19,17 @@ export const HeroSection = () => {
         alt="scrolldown"
         width={50}
         height={50}
-        layout="responsive"
         className="max-h-12 max-w-fit lg:hidden"
       />
-      <Image
-        src="/icons/scrolldown.svg"
-        alt="scrolldown"
-        width={50}
-        height={50}
-        layout="responsive"
-        className="max-h-12 max-w-fit hidden lg:inline-block"
-      />
+      <a href="#perks">
+        <Image
+          src="/icons/scrolldown.svg"
+          alt="scrolldown"
+          width={50}
+          height={50}
+          className="max-h-12 max-w-fit hidden lg:inline-block"
+        />
+      </a>
     </section>
   )
 }
