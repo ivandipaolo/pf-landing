@@ -14,14 +14,14 @@ export const HeroSection = () => {
           We provide everyone with modern, trendy, quality furniture
         </p>
       </div>
-      <Image
-        src="/icons/white-scrolldown.svg"
-        alt="scrolldown"
-        width={50}
-        height={50}
-        className="max-h-12 max-w-fit lg:hidden"
-      />
-      <a href="#perks">
+      <a href="#perks" className="w-fit ">
+        <Image
+          src="/icons/white-scrolldown.svg"
+          alt="scrolldown"
+          width={50}
+          height={50}
+          className="max-h-12 max-w-fit lg:hidden inline-block "
+        />
         <Image
           src="/icons/scrolldown.svg"
           alt="scrolldown"
