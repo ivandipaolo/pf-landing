@@ -19,6 +19,7 @@ const config: Config = {
         secondary: '#706458',
         tertiary: '#534B42',
         background: '#F3EEE8',
+        input_background: '#fdfbf9',
         extra: '#121212',
       },
       fontSize: {
