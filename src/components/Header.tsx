@@ -18,7 +18,7 @@ export const Header = () => {
           layout="responsive"
           className="max-h-12 max-w-fit lg:hidden"
         />
-        <nav className="lg:flex flex-row font-varta text-secondary gap-5 mt-3.5 text-lg font-normal hidden">
+        <nav className="lg:flex flex-row font-varta text-secondary lg:gap-2 lg:flex-wrap xl:gap-5 mt-3.5 text-lg font-normal hidden">
           <p>Products</p>
           <p>Rooms</p>
           <p>Services</p>
