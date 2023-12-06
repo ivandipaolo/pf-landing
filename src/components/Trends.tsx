@@ -43,7 +43,7 @@ export const Trends = () => {
             setEmail("")
           }}
           className={cn(
-            "font-karla font-bold text-base lg:text-lg text-white bg-tertiary h-12 lg:w-fit lg:px-7 lg:py-3)",
+            "font-karla font-bold text-base lg:text-lg text-white bg-tertiary h-12 lg:w-fit px-7 lg:py-3)",
             isSubscribed && "bg-subscribed"
           )}
         >
