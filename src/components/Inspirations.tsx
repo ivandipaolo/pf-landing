@@ -22,7 +22,6 @@ export const Inspirations = () => {
               alt="scrolldown"
               width={50}
               height={50}
-              layout="responsive"
               className="max-h-12 max-w-fit"
             />
             <Image
@@ -30,7 +29,6 @@ export const Inspirations = () => {
               alt="scrolldown"
               width={50}
               height={50}
-              layout="responsive"
               className="max-h-12 max-w-fit"
             />
           </div>

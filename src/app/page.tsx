@@ -31,6 +31,7 @@ export default function Home() {
         height={50}
         className="lg:inline-block hidden max-h-12 border rounded-full text-white max-w-fit z-10 absolute top-10 right-10"
       />
+      <div id="perks" />
       <MaxWidthWrapper className="mb-5">
         {/* Todo: Image is over Perk's title on responsive */}
         <Perks />

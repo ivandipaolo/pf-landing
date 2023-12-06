@@ -33,3 +33,6 @@
 .continuous-swipe .swiper-wrapper {
   animation: swipe 18s linear infinite;
 }
+html {
+  scroll-behavior: smooth;
+}
