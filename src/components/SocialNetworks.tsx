@@ -20,12 +20,12 @@ export const SocialNetworks = () => {
     },
     {
       name: "LinkedIn",
-      iconPath: "/images/social-icons/LinkedIn.svg",
+      iconPath: "/images/social-icons/Linkedin.svg",
       href: "https://www.linkedin.com/in/antic/",
     },
     {
       name: "Instagram",
-      iconPath: "/images/social-icons/instagram.svg",
+      iconPath: "/images/social-icons/Instagram.svg",
       href: "https://www.instagram.com/antic/",
     },
   ]
