@@ -1,8 +1,12 @@
-import { Header, HeroSection } from "@/components"
-import { Carrousel } from "@/components/Carrousel"
-import { MaxWidthWrapper } from "@/components/MaxWidthWrapper"
-import { Perks } from "@/components/Perks"
-import { Trends } from "@/components/Trends"
+import {
+  MaxWidthWrapper,
+  Header,
+  HeroSection,
+  Perks,
+  Trends,
+  Carrousel,
+  Footer,
+} from "@/components"
 import Image from "next/image"
 
 export default function Home() {
@@ -33,9 +37,12 @@ export default function Home() {
       <MaxWidthWrapper className="bg-white pt-10">
         <Trends />
       </MaxWidthWrapper>
-      <div className="bg-white"> 
+      <div className="bg-white pb-10">
         <Carrousel />
       </div>
+      <MaxWidthWrapper>
+        <Footer />
+      </MaxWidthWrapper>
       {/* Make inspiration here too */}
     </>
   )

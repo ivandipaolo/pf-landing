@@ -1,5 +1,3 @@
-import { Carrousel } from "./Carrousel"
-
 export const Trends = () => {
   return (
     <div className="flex flex-col gap-7">
