@@ -74,15 +74,15 @@
    ```
 
 4. Run preview server
-(Default port 4173)
+(Default port 3000)
    ```bash
-   npm run preview
+   npm start
    ```
 
 5. Open preview
 
    ```bash
-   localhost:4173
+   localhost:3000
    ```
 
 
